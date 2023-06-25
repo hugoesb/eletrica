@@ -1,9 +1,9 @@
-# eletrica
+# pyeletrica
 
 Fundamental tools for electrical engineers.
 
 ## Tools
-This is the avaliable functions in `eletrica`:
+This is the avaliable functions in `pyeletrica`:
 
 * sind
 * cosd
@@ -22,9 +22,9 @@ This is the avaliable functions in `eletrica`:
 You can use the documentation to understand how the function works .
 
 ```python
->>> import eletrica as elt
+>>> import pyeletrica as elt
 >>> help(elt.to_symcomp)
-Help on function to_symcomp in module eletrica:
+Help on function to_symcomp in module pyeletrica:
 
 to_symcomp(Va, Vb, Vc, ndigits=3)
     Calculate symmetric component vector from line vector.
@@ -60,7 +60,7 @@ Plot vectors.
 ```python
 In [1]: elt.plot3vectors([[10,0], [9,-110], [10.93,129.3]], ['Ia', 'Ib', 'Ic'])
 ```
-![Plot](https://raw.githubusercontent.com/hugoesb/eletrica/main/plot_polar_ex.png)
+![Plot](https://raw.githubusercontent.com/hugoesb/pyeletrica/main/plot_polar_ex.png)
 
 Calculate base impedance and base current from apparent power and voltage.
 ```python

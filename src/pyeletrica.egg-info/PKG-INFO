@@ -1,5 +1,5 @@
 Metadata-Version: 2.1
-Name: eletrica
+Name: pyeletrica
 Version: 0.0.1
 Summary: Fundamental tools for electrical engineers.
 Author-email: Hugo Everaldo Salvador Bezerra <hugoesb@gmail.com>
@@ -24,7 +24,7 @@ License: MIT License
         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
         SOFTWARE.
-Project-URL: Homepage, https://github.com/hugoesb/eletrica
+Project-URL: Homepage, https://github.com/hugoesb/pyeletrica
 Keywords: engineer,electrical
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
@@ -33,12 +33,12 @@ Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
-# eletrica
+# pyeletrica
 
 Fundamental tools for electrical engineers.
 
 ## Tools
-This is the avaliable functions in `eletrica`:
+This is the avaliable functions in `pyeletrica`:
 
 * sind
 * cosd
@@ -54,12 +54,12 @@ This is the avaliable functions in `eletrica`:
 * overcurrent_time
 
 ## Help
-To understand how the function works you can use the documentation.
+You can use the documentation to understand how the function works .
 
 ```python
->>> import eletrica as elt
+>>> import pyeletrica as elt
 >>> help(elt.to_symcomp)
-Help on function to_symcomp in module eletrica:
+Help on function to_symcomp in module pyeletrica:
 
 to_symcomp(Va, Vb, Vc, ndigits=3)
     Calculate symmetric component vector from line vector.
@@ -95,7 +95,7 @@ Plot vectors.
 ```python
 In [1]: elt.plot3vectors([[10,0], [9,-110], [10.93,129.3]], ['Ia', 'Ib', 'Ic'])
 ```
-![Plot](https://raw.githubusercontent.com/hugoesb/eletrica/main/plot_polar_ex.png)
+![Plot](https://raw.githubusercontent.com/hugoesb/pyeletrica/main/plot_polar_ex.png)
 
 Calculate base impedance and base current from apparent power and voltage.
 ```python

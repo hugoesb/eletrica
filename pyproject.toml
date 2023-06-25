@@ -3,7 +3,7 @@ requires      = ["matplotlib", "numpy", "setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "eletrica"
+name = "pyeletrica"
 version = "0.0.1"
 description = "Fundamental tools for electrical engineers."
 readme = "README.md"
@@ -23,7 +23,7 @@ dependencies = [
 requires-python = ">=3.6"
 
 [project.urls]
-"Homepage" = "https://github.com/hugoesb/eletrica"
+"Homepage" = "https://github.com/hugoesb/pyeletrica"
 
 [project.scripts]
-eletrica = "eletrica.__main__:main"
+pyeletrica = "pyeletrica.__main__:main"
