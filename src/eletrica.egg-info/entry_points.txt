@@ -1,0 +1,2 @@
+[console_scripts]
+eletrica = eletrica.__main__:main

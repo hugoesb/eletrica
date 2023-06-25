@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/eletrica/__init__.py
+src/eletrica/__main__.py
+src/eletrica.egg-info/PKG-INFO
+src/eletrica.egg-info/SOURCES.txt
+src/eletrica.egg-info/dependency_links.txt
+src/eletrica.egg-info/entry_points.txt
+src/eletrica.egg-info/requires.txt
+src/eletrica.egg-info/top_level.txt
