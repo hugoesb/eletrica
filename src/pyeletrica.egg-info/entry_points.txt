@@ -1,2 +1,0 @@
-[console_scripts]
-pyeletrica = pyeletrica.__main__:main

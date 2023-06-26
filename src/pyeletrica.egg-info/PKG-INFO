@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pyeletrica
-Version: 0.0.1
+Version: 0.0.3
 Summary: Fundamental tools for electrical engineers.
 Author-email: Hugo Everaldo Salvador Bezerra <hugoesb@gmail.com>
 License: MIT License

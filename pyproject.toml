@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyeletrica"
-version = "0.0.2"
+version = "0.0.3"
 description = "Fundamental tools for electrical engineers."
 readme = "README.md"
 authors = [{ name = "Hugo Everaldo Salvador Bezerra", email = "hugoesb@gmail.com" }]
