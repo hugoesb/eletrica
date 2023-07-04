@@ -73,7 +73,7 @@ def ZIbase(S, V):
     Parameters
     ----------
     S: float
-        Power (watts).
+        Power (VA).
     V : float
         Voltage (volts).
     
@@ -83,8 +83,8 @@ def ZIbase(S, V):
         (base impedance (ohms), base current in (amps))
     '''
 
-    Zb = S / (np.sqrt(3) * V)
-    Ib = V**2 / S
+    Ib = S / (np.sqrt(3) * V)
+    Zb = V**2 / S
 
     return (Zb, Ib)
 
