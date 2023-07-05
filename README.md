@@ -14,6 +14,7 @@ This is the avaliable functions in `pyeletrica`:
 * ZIbase
 * Zparallel
 * plot3vectors
+* plotmho
 * to_linecomp
 * to_symcomp
 * overcurrent_time
