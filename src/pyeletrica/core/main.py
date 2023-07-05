@@ -260,6 +260,53 @@ def plot3vectors(V, labels=['a','b','c']):
     plt.legend()
     plt.show()
 
+def plotmho(Zline, reach=[0.8, 1.2], plotline=True, color='rb', label=['Zone 1', 'Zona 2'], ax=None):
+    '''
+    plot mho caracteristic.
+
+    Parameters
+    ----------
+    Zline : float
+        Line impedance.
+    reach: array-like
+        Array with reachs. The array must have the same length of 
+        color and label.
+    plotline: bool
+        if True plot Line impedance.
+    color: string or array-like
+        Colors of zones. The array must have the same length of 
+        reach and label.
+    label: array-like
+        Label of zones. The array must have the same length of 
+        reach as color.
+    ax: matplotlib.axes._axes.Axes
+        If None the function create in execution time.
+    '''
+    if not ax:
+        fig, ax = plt.subplots()
+    
+    Zline_rect = rect(Zline)
+    
+    for rc, c, l in zip(list(reach), list(color), list(label)):
+        Z = Zline_rect * rc        
+        offset0 = Z/2
+        ax.add_patch(plt.Circle([offset0.real, offset0.imag], 
+                            abs(Z)/2, color=c, fc='none', label=l))
+    if plotline:
+        ax.plot([0, Zline_rect.real], [0, Zline_rect.imag], label='Line')
+    ax.set_aspect('equal')
+    min,max = np.ceil(ax.get_xlim())
+    min -= 1
+    plt.xticks(range(int(min),int(max)))
+    min,max = np.ceil(ax.get_ylim())
+    min -= 1
+    plt.yticks(range(int(min),int(max)))
+    plt.axvline(0, color='k')
+    plt.axhline(0, color='k')
+    plt.grid()
+    plt.legend()
+    plt.show()
+
 def overcurrent_time(I, Is , TD, standard='iec', curva='si'):
     '''
     Tempo de atuação da função de sobrecorrente.
@@ -293,6 +340,7 @@ def overcurrent_time(I, Is , TD, standard='iec', curva='si'):
     out: float
          Operating time (seconds).
     '''
+    
     Ir = I/Is
     if standard=='iec':
         if curva=='si':
